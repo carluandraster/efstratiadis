@@ -26,7 +26,7 @@ nav{
 	width:100vw;
 }
 img{
-	width:40%;
+	height:70vh;
 	margin:10px;
 }
 h1{
@@ -36,7 +36,8 @@ h1{
 main{
 	display:flex;
 	margin-top:5%;
+	margin-right: 10vw;
 }
 body{
-	background: #DCF4FA;
+	background: #b5f0ff;
 }
