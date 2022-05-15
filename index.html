@@ -5,20 +5,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Acerca de Andrés</title>
-	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-	<nav>
-		<div>
-			<a href="#">VOLVER</a>
+	<header class="flex-container">
+		<nav>
+			<div>
+				<a href="#">VOLVER</a>
+			</div>
+			<div>
+				<a href="#">INGRESAR</a>
+			</div>
+		</nav>
+		<div class="title">
+			<h1>Carlos Andrés Efstratiadis</h1>
 		</div>
-		<div>
-			<a href="#">INGRESAR</a>
-		</div>
-	</nav>
-	<h1>Carlos Andrés Efstratiadis</h1>
+	</header>
 	<main>
-		<img src="Img\Foto.jpg" alt="Yo, Andrés">
+		<img src="img\Foto.jpg" alt="Yo, Andrés" id="mi-foto">
 		<article>
 			<p>¡Hola! Mi nombre formal es Carlos pero la gente me dice Andrés.</p>
 			<p>Tengo 17 años y estoy cursando el último año (sexto) del Colegio Nacional Dr. Arturo U. Illia.</p>
@@ -29,5 +33,20 @@
 			<p>Estoy interesado en seguir Ingeniería Informática aunque también considero la posibilidad de estudiar Ingeniería en Sistemas para aprender a crear soluciones digitales. Mi sueño como programador sería convertirme en Full Stack Developer (saber Front End y Back End) y con esos conocimientos poder encontrarle una "cura" a aquellas computadoras cuyos archivos han sido encriptados por algún ransomware; es decir, por algún programa malicioso que encripta todos los archivos de la PC y pide rescate a cambio para deshacer la acción. Lo peor de todo es que incluso pagando la computadora sigue quedando inutilizable. ¡Una total estafa!</p>
 		</article>
 	</main>
+	<footer>
+		<p>Contactános</p>
+		<p>Seguíme en las redes sociales</p>
+		<div class="redes">
+			<a href="https://instagram.com/andres_efstratiadis" target="_BLANK">
+				<img src="img/Instagram.png" alt="Ícono de Instagram" id="ig" title="Instagram">
+			</a>
+			<a href="https://facebook.com/carlosandres.efstratiadis/" target="_BLANK">
+				<img src="img/Facebook.png" alt="Ícono de Facebook" id="fb" title="Facebook">
+			</a>
+			<a href="https://twitter.com/Carluandraster" target="_BLANK">
+				<img src="img/twitter.png" alt="Ícono de Twitter" id="tw" title="Twitter">
+			</a>
+		</div>
+	</footer>
 </body>
 </html>
