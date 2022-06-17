@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.atras {
+ display: flex;
+ height: 3em;
+ width: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: inherit;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+}
+
+.atras > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+}
+
+.atras:hover > svg {
+ font-size: 1.2em;
+ transform: translateX(-5px);
+}
+
+.atras:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
+}
+a{
+	text-decoration: none;
+}
+header{
+	position: fixed;
+	z-index: 10;
+	width:100vw;
+	background: #E05347;
+}
+header > nav{
+	display:flex;
+	justify-content: space-between;
+	height: 3em;
+	align-items: center;
+}
+#botones-hacia-la-derecha{
+	margin-right: 10px;
+}
+#botones-hacia-la-derecha > a:link, #botones-hacia-la-derecha > a:visited{
+	color:#fff;
+	margin: 0 10px;
+}
+main{
+	position: relative;
+	top:3em;
+}
+h1{
+	font-size: 46px;
+	position: relative;top:20px;
+	text-align: center;
+}
+#presentacion{
+	background-image: url(../img/Mi_foto.jpg);
+	width: calc(100vw-3px);
+	height: 99vh;
+	background-attachment:fixed;
+	color: #fff;
+}
+#conociendome{
+	margin:30px;
+	background: #B8BEE6;
+	padding: 20px;
+}
+.momento{
+	display:flex;
+	flex-direction: column;
+	margin: 125% 0;
+}
+.momento h3 {
+  margin: 0px 0px;
+  font-size: 30px;
+  text-align: center;
+  display: inline;
+}
+/*.momento::after {
+  content: '';
+  position: absolute;
+  left: calc(100% - 8.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-top:30px;
+}*/
+.grid-container{
+	display:grid;
+	grid-template-rows: repeat(6,15%);
+	grid-template-columns: 10% repeat(3,29%);
+	margin-left: 20px;
+	width:calc(100vw-3px);
+}
+.grid-item img{
+	width:100%;
+}
+.centro{
+	display: flex;
+	align-items: center;
+}
+#ppd{
+	grid-column: 2/5;
+}
+#ft-con-carrizo{
+	grid-column: 3/5;
+}
+#preferencias{
+	display: flex;
+	width: calc(100vw-3px);
+	justify-content: space-around;
+}
+#preferencias ul{
+	margin-left: 20px;
+}
+.hdp{
+	width:350px;
+	padding: 20px;
+}
+.hdp h2{
+	text-align: center;
+}
+#gustos{
+	background: #0BD9D9;
+}
+#disgustos{
+	background: #F2470C;
+}
+#grande{
+	display: flex;
+	flex-direction: row-reverse;
+}
+footer{
+	margin-top: 50px;
+	background: #000;
+	color: #fff;
+}
+.redes img{
+	width:20px;
+}
