@@ -1,0 +1,5 @@
+Actualización 2.1 (1/7/2022)
+
+1. Paso por el Illia: en la sección de cuarto año se reemplazó el texto de "Pandemia de COVID-19" por una fotografía de las Olimpiadas de Geografía en la virtualidad.
+   Todas las fotografías han sido descargadas porque no se veían por los permisos.
+2. Bloque de preguntas: se agregó un nuevo bloque de preguntas frecuentes al estudiante Carlos Andrés Efstratiadis. Además se le asignó algunos estilos.
