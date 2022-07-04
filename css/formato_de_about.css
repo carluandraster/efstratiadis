@@ -81,7 +81,6 @@ header > nav{
 }
 .nav-item{
 	display:block;
-    width:100%%;
     margin:0 auto;
     line-height: 2.3;
     position:relative;
@@ -151,10 +150,42 @@ h1{
 }
 #presentacion{
 	background-image: url(../img/Mi_foto.jpg);
+	background-size: cover;
 	width: calc(100vw-3px);
 	height: 99vh;
 	background-attachment:fixed;
 	color: #fff;
+}
+@media only screen and (max-width: 620px){
+	#presentacion{
+		background-image: url(../img/Foto.jpg);
+		background-position: center;
+	}
+}
+@media only screen and (max-width: 470px){
+	h1{
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 419px){
+	h1{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width: 377px){
+	h1{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 334px){
+	h1{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 290px){
+	h1{
+		font-size: 20px;
+	}
 }
 #conociendome{
 	margin:30px;
@@ -286,6 +317,64 @@ h1{
 }
 #ft-con-carrizo{
 	grid-column: 3/5;
+}
+@media only screen and (max-width: 1274px){
+	.año-letra{
+		display: none;
+	}
+}
+@media only screen and (min-width: 1275px){
+	.año-numero{
+		display: none;
+	}
+}
+@media only screen and (max-width: 923px){
+	.momento h3:first-child{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 864px){
+	.momento h3:last-child{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 772px){
+	.momento h3:first-child{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 724px){
+	.momento h3:last-child{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 622px){
+	.grid-container{
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 602px){
+	.momento h3:first-child{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 564px){
+	.momento h3:last-child{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 451px){
+	.palabra-año{
+		display: none;
+	}
+	.momento h3:first-child{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 414px){
+	.momento h3:last-child{
+		font-size: 10px;
+	}
 }
 #preferencias{
 	display: flex;
