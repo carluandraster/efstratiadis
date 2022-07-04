@@ -50,15 +50,99 @@ header > nav{
 	align-items: center;
 }
 #botones-hacia-la-derecha{
+	display: flex;
 	margin-right: 10px;
+	flex-wrap: wrap;
 }
 #botones-hacia-la-derecha > a:link, #botones-hacia-la-derecha > a:visited{
 	color:#fff;
 	margin: 0 10px;
 }
+@media only screen and (max-width: 979px){
+	header > nav{
+		height: 4em;
+	}
+	#botones-hacia-la-derecha > a:link, #botones-hacia-la-derecha > a:visited{
+		margin: 5px 10px;
+	}
+}
+#responsive-menu{
+	position:fixed;
+  	width:200px;
+  	height:100vh;
+  	top:0px;
+  	left:-210px; 
+  	padding-top:0px;
+  	background-color: rgba(0, 0, 0, 1);
+  	border-right:4px solid rgba(255, 255, 255, 1);
+  	transition:left 0.5s ease;
+  	z-index: 10;
+  	overflow-y: auto;
+}
+.nav-item{
+	display:block;
+    width:100%%;
+    margin:0 auto;
+    line-height: 2.3;
+    position:relative;
+  	padding:20px;
+    border-bottom:.5px solid rgba(255, 255, 255, 1);
+    border-top:.5px solid rgba(255, 255, 255, 1);
+    background-color:transparent;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    text-align:center;
+    color:rgba(255, 255, 255, 1);
+  	text-decoration:none;
+}
+.menu-toogle {
+    position:fixed; 
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top: 3px;
+    left: 3px; 
+    border-radius:3px;
+    background-color: #000000;
+    transition: all .5s ease; 
+    z-index:10;
+}
+.menu-toogle::before {
+     content:" ☰ ";
+     font-size: 36px;
+     color:#FFFFFF;
+}
+.checkbox {
+      display:none; 
+    }
+    .checkbox:checked ~ #responsive-menu {
+      position:fixed;
+      left:0px;
+    }
+    .checkbox:checked ~ .menu-toogle { 
+      left: 210px;
+      position:fixed; 
+    }
+.menu-toogle:hover{
+  cursor: pointer;
+}
+@media only screen and (min-width: 567px){
+	#m-toogle{
+		display: none;
+	}
+}
 main{
 	position: relative;
 	top:3em;
+}
+@media only screen and (max-width: 566px){
+	header{
+		display: none;
+	}
+	main{
+		position: relative;
+		top:0;
+	}
 }
 h1{
 	font-size: 46px;
@@ -101,6 +185,76 @@ h1{
 }
 .destacado{
 	font-weight: bold;
+}
+@media only screen and (max-width: 604px){
+	.left, .right{
+		margin: 20px 0px;
+	}
+}
+@media only screen and (max-width: 497px){
+	.left, .right{
+		margin: 15px 0px;
+	}
+}
+@media only screen and (max-width: 464px){
+	.left, .right{
+		margin: 10px 0px;
+	}
+}
+@media only screen and (max-width: 401px){
+	.left, .right{
+		margin: 5px 0px;
+	}
+}
+@media only screen and (max-width: 395px){
+	.left, .right{
+		margin: 0px;
+	}
+}
+@media only screen and (max-width: 360px){
+	.left, .right{
+		padding: 0px 15px;
+	}
+}
+@media only screen and (max-width: 345px){
+	.left, .right{
+		padding: 0px 10px;
+	}
+}
+@media only screen and (max-width: 335px){
+	.left, .right{
+		padding: 0px 5px;
+	}
+}
+@media only screen and (max-width: 325px){
+	.left, .right{
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 315px){
+	#preguntas{
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 305px){
+	#preguntas{
+		padding:10px;
+	}
+}
+@media only screen and (max-width: 295px){
+	#preguntas{
+		padding:5px;
+	}
+}
+@media only screen and (max-width: 290px){
+	#preguntas{
+		padding:0px;
+	}
+}
+@media only screen and (max-width: 280px){
+	#preguntas h3{
+		font-size: 18px;
+	}
 }
 .momento{
 	display:flex;
@@ -155,9 +309,37 @@ h1{
 #disgustos{
 	background: #F2470C;
 }
+#imagenes{
+	display: flex;
+	justify-content: center;
+}
+@media only screen and (min-width: 1024px){
+	#vertical{
+		visibility: hidden;
+		display: none;
+	}
+	#horizontal{
+		visibility: visible;
+	}
+}
+@media only screen and (max-width:1024px){
+	#horizontal{
+		visibility: hidden;
+		display: none;
+	}
+	#vertical{
+		visibility: visible;
+	}
+}
 #grande{
 	display: flex;
 	flex-direction: row-reverse;
+}
+#code{
+	max-height: 175px;
+}
+#grande__text{
+	min-width: 50vw;
 }
 footer{
 	margin-top: 50px;

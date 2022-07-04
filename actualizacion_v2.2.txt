@@ -1,0 +1,12 @@
+Actualización 2.2 (3/7/2022): responsive update
+
+1. Bloque futuro: se añadió dos fotomontajes de la que sólo se muestra uno dependiendo de la resolución del dispositivo. En caso de que se abra la página desde una PC, se mostrará en el monitor una imagen horizontal y, en cambio, si se abre desde un dispositivo móvil se mostrará una imagen vertical. En ambos casos la imagen se encuentra centrada.
+2. Bloque preguntas: se hizo ajustes en función del ancho del viewport tal que no sobrepase el texto.
+3. index.html: se centró la imagen de fondo para que en celulares se pueda ver la cara del señor en cuestión.
+4. Nav: para los celulares se añadió un menú Toogle que reemplaza al header cuando colapsa por cuestión de resolución.
+
+
+PENDIENTES (esto después se borra)
+1. Reemplazar el header por un menu toogle para celulares (Listo)
+2. Adaptar el título y la foto tuya de presentación
+3. En Illia adaptar la primera columna a mobile.

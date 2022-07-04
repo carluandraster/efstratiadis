@@ -6,6 +6,7 @@
 }
 body{
 	background-image: url(../img/DSC_0943.JPG);
+	background-position: center;
 	background-size: cover;
 	overflow:none;
 }
