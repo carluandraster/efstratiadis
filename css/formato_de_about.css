@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: sans-serif;
 }
 .atras {
@@ -193,6 +194,9 @@ h1{
 	top:20px;
 	text-align: center;
 }
+h2{
+	font-size: 40px;
+}
 .other_name{
 	/* Centramos el contenido de la sección y determinamos el color de fondo */
 	display: flex;
@@ -262,27 +266,27 @@ h1{
 	}
 }
 @media only screen and (max-width: 470px){
-	h1{
+	.light h2, .light::before{
 		font-size: 40px;
 	}
 }
 @media only screen and (max-width: 419px){
-	h1{
+	.light h2, .light::before{
 		font-size: 35px;
 	}
 }
 @media only screen and (max-width: 377px){
-	h1{
+	.light h2, .light::before{
 		font-size: 30px;
 	}
 }
 @media only screen and (max-width: 334px){
-	h1{
+	.light h2, .light::before{
 		font-size: 25px;
 	}
 }
 @media only screen and (max-width: 290px){
-	h1{
+	.light h2, .light::before{
 		font-size: 20px;
 	}
 }
@@ -386,6 +390,9 @@ h1{
 		font-size: 18px;
 	}
 }
+.grid-item{
+	margin: 1px;
+}
 .momento{
 	display:flex;
 	flex-direction: column;
@@ -406,24 +413,36 @@ h1{
 }
 .grid-item img{
 	width:100%;
+	height:100%;
+	object-fit: cover;
+	transition: transform 0.2s;
 }
 .grid-item img:hover{
-	width:30%;
-	position: absolute;z-index: 10;
-}
-.centro{
-	display: flex;
-	align-items: center;
+	transform: scale(1.1);
 }
 #ppd{
 	grid-column: 2/5;
 }
 #ppd img:hover{
-	width: 110%;
+	transform: scale(1.05);
 }
 #ft-con-carrizo{
 	grid-column: 3/5;
 }
+.grid-item .titleBox {
+      position: relative;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+    }
+ .grid-item:hover .titleBox{
+    display: block;
+    }
 @media only screen and (max-width: 1274px){
 	.año-letra{
 		display: none;
@@ -482,6 +501,150 @@ h1{
 		font-size: 10px;
 	}
 }
+body.ps-active 
+{
+	-webkit-text-size-adjust: none;
+	overflow: hidden;
+}
+body.ps-active * 
+{ 
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+body.ps-active *:focus 
+{ 
+	outline: 0; 
+}
+
+
+/* Document overlay */
+div.ps-document-overlay 
+{
+	background: #000;
+}
+
+
+/* Viewport */
+div.ps-viewport 
+{
+	background: #000;
+	cursor: pointer;
+}
+
+
+/* Zoom/pan/rotate layer */
+div.ps-zoom-pan-rotate{
+	background: #000;
+}
+
+
+/* Slider */
+div.ps-slider-item-loading 
+{ 
+	background: url(http://abvichico.com/images/photoswipe/photoswipe-loader.gif) no-repeat center center; 
+}
+
+
+/* Caption */
+div.ps-caption
+{ 
+	background: #000000;
+	background: -moz-linear-gradient(top, #303130 0%, #000101 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));
+	border-bottom: 1px solid #42403f;
+	color: #ffffff;
+	font-size: 13px;
+	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
+	text-align: center;
+}
+
+div.ps-caption-bottom
+{ 
+	border-top: 1px solid #42403f;
+	border-bottom: none;
+}
+
+div.ps-caption-content
+{
+	padding: 13px;
+}
+
+
+/* Toolbar */
+div.ps-toolbar
+{ 
+	background: #000000;
+	background: -moz-linear-gradient(top, #303130 0%, #000101 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));
+	border-top: 1px solid #42403f;
+	color: #ffffff;
+	font-size: 13px;
+	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
+	text-align: center;
+	height: 44px;
+	display: table;
+	table-layout: fixed;
+}
+
+div.ps-toolbar-top 
+{
+	border-bottom: 1px solid #42403f;
+	border-top: none;
+}
+
+div.ps-toolbar-close, div.ps-toolbar-previous, div.ps-toolbar-next, div.ps-toolbar-play
+{
+	cursor: pointer;
+	display: table-cell;
+}
+
+div.ps-toolbar div div.ps-toolbar-content
+{
+	width: 44px;
+	height: 44px;
+	margin: 0 auto 0;
+	background-image: url(http://abvichico.com/images/photoswipe/photoswipe-icons.png);
+	background-repeat: no-repeat;
+}
+
+div.ps-toolbar-close div.ps-toolbar-content
+{
+	background-position: 0 0;
+}
+
+div.ps-toolbar-previous div.ps-toolbar-content
+{
+	background-position: -44px 0;
+}
+
+div.ps-toolbar-previous-disabled div.ps-toolbar-content
+{
+	background-position: -44px -44px;
+}
+
+div.ps-toolbar-next div.ps-toolbar-content
+{
+	background-position: -132px 0;
+}
+
+div.ps-toolbar-next-disabled div.ps-toolbar-content
+{
+	background-position: -132px -44px;
+}
+
+div.ps-toolbar-play div.ps-toolbar-content
+{
+	background-position: -88px 0;
+}
+
+/* Hi-res retina display */
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+	div.ps-toolbar div div.ps-toolbar-content
+	{
+		-webkit-background-size: 176px 88px;
+		background-image: url(http://abvichico.com/images/photoswipe/photoswipe-icons@2x.png);
+	}
+}
 #preferencias{
 	display: flex;
 	width: calc(100vw-3px);
@@ -497,6 +660,21 @@ h1{
 /*hdp son los hijos del bloque de preferencias*/
 .hdp h2{
 	text-align: center;
+}
+@media only screen and (max-width: 790px){
+	.hdp h2{
+		font-size: 23px;
+	}
+}
+@media only screen and (max-width: 378px){
+	.hdp h2{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 378px){
+	.hdp{
+		padding: 0;
+	}
 }
 #gustos{
 	background: #0BD9D9;
@@ -532,6 +710,11 @@ h1{
 }
 #code{
 	max-height: 175px;
+}
+@media only screen and (max-width: 318px){
+	#code{
+		width:100%;
+	}
 }
 #grande__text{
 	min-width: 50vw;
