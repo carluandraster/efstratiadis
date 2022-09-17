@@ -419,7 +419,7 @@ h2{
 }
 .grid-container{
 	display:grid;
-	grid-template-rows: repeat(6,15%);
+	grid-template-rows: repeat(6,calc(100% / 6));
 	grid-template-columns: 10% repeat(3,29%);
 	margin-left: 20px;
 	width:calc(100vw-3px);
@@ -662,45 +662,6 @@ div.ps-toolbar-play div.ps-toolbar-content
 		-webkit-background-size: 176px 88px;
 		background-image: url(http://abvichico.com/images/photoswipe/photoswipe-icons@2x.png);
 	}
-}
-/* Estilos de amor/odio */
-#preferencias{
-	display: flex;
-	width: calc(100vw-3px);
-	justify-content: space-around;
-}
-#preferencias ul{
-	margin-left: 20px;
-}
-.hdp{
-	width:350px;
-	padding: 20px;
-}
-/*hdp son los hijos del bloque de preferencias*/
-.hdp h2{
-	text-align: center;
-}
-/* Dieseño responsive de amor/odio */
-@media only screen and (max-width: 790px){
-	.hdp h2{
-		font-size: 23px;
-	}
-}
-@media only screen and (max-width: 378px){
-	.hdp h2{
-		font-size: 20px;
-	}
-}
-@media only screen and (max-width: 378px){
-	.hdp{
-		padding: 0;
-	}
-}
-#gustos{
-	background: #0BD9D9;
-}
-#disgustos{
-	background: #F2470C;
 }
 /* Fotomontajes: uno vertical y otro horizontal */
 #imagenes{
