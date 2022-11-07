@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 /* Menú de navegación */
 .atras {
@@ -56,6 +57,7 @@ header > nav{
 	display: flex;
 	margin-right: 10px;
 	flex-wrap: wrap;
+	transition: 0.5s ease-in-out;
 }
 #botones-hacia-la-derecha > a:link, #botones-hacia-la-derecha > a:visited{
 	color:#fff;
