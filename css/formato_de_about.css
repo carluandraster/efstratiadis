@@ -37,7 +37,7 @@
  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
  transform: translateY(-2px);
 }
-a{
+header a{
 	text-decoration: none;
 }
 header{
@@ -263,9 +263,24 @@ h2{
 	color: #fff;
 }
 /* Adaptación de la presentación a distintas resoluciones */
+@media only screen and (max-width: 912px){
+	.light h2, .light::before{
+		font-size: 55px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.light h2, .light::before{
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 660px){
+	.light h2, .light::before{
+		font-size: 45px;
+	}
+}
 @media only screen and (max-width: 620px){
 	#presentacion{
-		background-image: url(../img/Foto.jpg);
+		background-image: url(../img/presentacion-para-celulares.jpg);
 		background-position: center;
 	}
 }
@@ -302,9 +317,8 @@ h2{
 }
 /* Estilos de la sección de preguntas */
 #preguntas{
-	background: url(../img/fondo_de_preferencias.jpg);
-	background-position: center;
-	height:720px;
+	background: #F7C80A;
+	height:auto;
 	color: #fff;
 	padding: 20px;
 }
@@ -330,91 +344,8 @@ h2{
 .destacado{
 	font-weight: bold;
 }
-/* Responsive design a las preguntas */
-@media only screen and (max-width: 847px){
-	#preguntas{
-		height: 750px;
-	}
-}
-@media only screen and (max-width: 695px){
-	#preguntas{
-		height: 800px;
-	}
-}
-@media only screen and (max-width: 604px){
-	.left, .right{
-		margin: 20px 0px;
-	}
-}
-@media only screen and (max-width: 497px){
-	.left, .right{
-		margin: 15px 0px;
-	}
-}
-@media only screen and (max-width: 464px){
-	.left, .right{
-		margin: 10px 0px;
-	}
-}
-@media only screen and (max-width: 695px){
-	#preguntas{
-		height: 850px;
-	}
-}
-@media only screen and (max-width: 401px){
-	.left, .right{
-		margin: 5px 0px;
-	}
-}
-@media only screen and (max-width: 395px){
-	.left, .right{
-		margin: 0px;
-	}
-}
-@media only screen and (max-width: 360px){
-	.left, .right{
-		padding: 0px 15px;
-	}
-}
-@media only screen and (max-width: 345px){
-	.left, .right{
-		padding: 0px 10px;
-	}
-}
-@media only screen and (max-width: 335px){
-	.left, .right{
-		padding: 0px 5px;
-	}
-}
-@media only screen and (max-width: 325px){
-	.left, .right{
-		padding: 0px;
-	}
-}
-@media only screen and (max-width: 315px){
-	#preguntas{
-		padding:15px;
-	}
-}
-@media only screen and (max-width: 305px){
-	#preguntas{
-		padding:10px;
-	}
-}
-@media only screen and (max-width: 295px){
-	#preguntas{
-		padding:5px;
-	}
-}
-@media only screen and (max-width: 290px){
-	#preguntas{
-		padding:0px;
-	}
-}
-@media only screen and (max-width: 280px){
-	#preguntas h3{
-		font-size: 18px;
-	}
+#link-de-ping-pong:link, #link-de-ping-pong:visited{
+	color: #fff;
 }
 /* Galería de fotos de mi paso por el Illia */
 .grid-item{
@@ -758,39 +689,14 @@ footer ul{
 footer .main-footer{	padding: 20px 0;	background: #252525;}
 footer ul{	padding-left: 0;	list-style: none;}
 
-/* Copy Right Footer */
-.footer-copyright {	background: #222;	padding: 5px 0;}
-.footer-copyright .logo {    display: inherit;}
-.footer-copyright nav {    float: right;    margin-top: 5px;}
-.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
-.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
-.footer-copyright nav ul li a{	color: #969696;}
-.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
-.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
-
-/* Footer Top */
-.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
-
-/* Footer transparent */
-footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
-footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
-
-/* Footer light */
-footer.light .footer-top{	background: #f9f9f9;}
-footer.light .main-footer{	background: #f9f9f9;}
-footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
-
-/* Footer 4 */
-.footer- .logo {    display: inline-block;}
-
 /*==================== 
 	Widgets 
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
-.widget.widget-last{	margin-bottom: 0px;}
-.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+.widget .widget-last{	margin-bottom: 0px;}
+.widget .no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
 	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
-.widget.subscribe p{	margin-bottom: 18px;}
+.widget p{	margin-bottom: 18px;}
 .widget li a{	color: #ff8d1e;}
 .widget li a:hover{	color: #4b92dc;}
 .widget-title {margin-bottom: 20px;}
@@ -810,10 +716,10 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 .typo-light span,
 .typo-light small{	color: #fff;}
 
-ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
-ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#ff8d1e;}
-ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
+ul .social-footer2 {	margin: 0;padding: 0;	width: auto;}
+ul .social-footer2 li {display: inline-block;padding: 0;}
+ul .social-footer2 li a:hover {background-color:#ff8d1e;}
+ul .social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
 .btn{background-color: #ff8d1e; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
 -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -828,6 +734,6 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 transition: all 250ms ease-in-out 0s;
 
 }
-a[title="glorythemes"]:link, a[title="glorythemes"]:visited{
+a[title="Mi dirección de correo electrónico"]:link, a[title="Mi dirección de correo electrónico"]:visited{
 	color: #279AE0;
 }
